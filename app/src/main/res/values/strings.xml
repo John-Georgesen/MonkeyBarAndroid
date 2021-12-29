@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">The Monkey Bar \u0026 Grille</string>
+    <string name="barName">The Monkey Bar \u0026 Grille</string>
+    <string name="hoursLabel"><u>HOURS</u></string>
+    <string name="socialMediaLabel"><u>FOLLOW US</u></string>
+    <string name="openCalendarLabel"><u>Open Calendar</u></string>
+
+    <!--strings for homepage nav-->
+    <string name="calendarString"><u>Calendar</u></string>
+    <string name="drinkMenuString"><u>Drink Menu</u></string>
+    <string name="musicString"><u>Music Schedule</u></string>
+    <string name="foodTruckString"><u>Food Trucks</u></string>
+    <string name="contactString"><u>Contact Us</u></string>
+    <string name="picturesString"><u>Pictures</u></string>
+
+    <!--Strings for Contact us page-->
+    <string name="phoneContactString"><u>+1 (513) 781-4246</u></string>
+    <string name="addressContactString"><u>7837 Old 3C Highway, Maineville, OH</u></string>
+    <string name="emailContactString"><u>themonkeybarandgrille@gmail.com</u></string>
+    <string name="instagramContactString"><u>@themonkeybarandgrille</u></string>
+    <string name="facebookContactString"><u>@themonkeybarandgrille</u></string>
+    <string name="websiteContactString"><u>www.themonkeybarandgrille.com</u></string>
+    <string name="hereLabel"><u>here</u></string>
+
+    <string name="HistoryLabel"><u>Click To Learn More About Our History!</u></string>
+
+    <!--Strings for menu page-->
+    <string name="bourbonSring"><u>Bourbon</u></string>
+    <string name="ryeBourbonSring"><u>Rye Bourbon</u></string>
+    <string name="scotchString"><u>Scotch</u></string>
+    <string name="bourbonImageView">The background to the bourbon description when button is pressed</string>
+
+    <string-array name="dropdownEntries">
+        <item>Menu</item>
+        <item>Calendar</item>
+        <item>Food Trucks</item>
+        <item>Music Schedule</item>
+    </string-array>
+</resources>

@@ -1,0 +1,1298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#471010"
+    android:screenOrientation="portrait"
+    tools:context=".MerchActivity">
+
+    <ImageView
+        android:id="@+id/TopBanner"
+        android:layout_width="0dp"
+        android:layout_height="87dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/black" />
+
+    <TextView
+        android:id="@+id/HeaderTitle"
+        android:layout_width="287dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/algerian"
+        android:gravity="center"
+        android:text="@string/barName"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TopBanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DDDropdown"
+        app:layout_constraintTop_toTopOf="@+id/TopBanner" />
+
+    <Button
+        android:id="@+id/DDDropdown"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/TopBanner"
+        app:layout_constraintEnd_toStartOf="@+id/HeaderTitle"
+        app:layout_constraintStart_toStartOf="@+id/TopBanner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486" />
+
+    <ImageView
+        android:id="@+id/bottomBanner"
+        android:layout_width="0dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:color/black" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="223dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="right"
+        android:text="7837 OLD 3C HIGHWAY, MAINEVILLE, OH, 45039"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomBanner" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="223dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:text="+1 (513) 781-4246"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomBanner" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="222dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:text="themonkeybarandgrille@gmail.com"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomBanner"
+        app:layout_constraintVertical_bias="0.843" />
+
+
+    <!-- Slideshow and background -->
+    <ImageView
+        android:id="@+id/bottomBannerLogo"
+        android:layout_width="85dp"
+        android:layout_height="66dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBanner"
+        app:layout_constraintEnd_toStartOf="@+id/address"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomBanner"
+        app:layout_constraintVertical_bias="0.909"
+        app:srcCompat="@drawable/mbg4" />
+
+    <!--Hours Labels -->
+
+    <!-- Social Media Labels and buttons -->
+
+
+    <Button
+        android:id="@+id/beanieTopButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Beanies"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/beanieScroll"
+        app:layout_constraintEnd_toStartOf="@+id/hoodieButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBanner" />
+
+    <Button
+        android:id="@+id/hoodieButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Hoodies"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/beanieScroll"
+        app:layout_constraintEnd_toStartOf="@+id/shirtButton"
+        app:layout_constraintStart_toEndOf="@+id/beanieTopButton"
+        app:layout_constraintTop_toBottomOf="@+id/TopBanner" />
+
+    <Button
+        android:id="@+id/shirtButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/roundedbutton"
+        android:text="T-Shirts"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/beanieScroll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hoodieButton"
+        app:layout_constraintTop_toBottomOf="@+id/TopBanner" />
+
+    <ScrollView
+        android:id="@+id/beanieScroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBanner">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/blackBeanieButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/blackbeanie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/electricBlueBeanie"
+                app:layout_constraintEnd_toStartOf="@+id/blackBeanieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/blackBeanieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Black Beanie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/electricBlueBeanieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/blackBeanieButton"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/electricBlueBeanie"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/electricbluebeanie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/forestGreenBeanie"
+                app:layout_constraintEnd_toStartOf="@+id/electricBlueBeanieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blackBeanieButton" />
+
+            <TextView
+                android:id="@+id/electricBlueBeanieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Electric Blue Beanie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/forestGreenBeanieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/electricBlueBeanie"
+                app:layout_constraintTop_toBottomOf="@+id/blackBeanieText" />
+
+            <Button
+                android:id="@+id/forestGreenBeanie"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/forestgreenbeanie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/goldBeanieButton"
+                app:layout_constraintEnd_toStartOf="@+id/forestGreenBeanieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/electricBlueBeanie" />
+
+            <TextView
+                android:id="@+id/forestGreenBeanieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Forest Green Beanie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/goldBeanieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/forestGreenBeanie"
+                app:layout_constraintTop_toBottomOf="@+id/electricBlueBeanieText" />
+
+            <Button
+                android:id="@+id/goldBeanieButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/goldbeanie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/greyBeanieButton"
+                app:layout_constraintEnd_toStartOf="@+id/goldBeanieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/forestGreenBeanie" />
+
+            <TextView
+                android:id="@+id/goldBeanieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Gold Beanie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/greybeanieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/goldBeanieButton"
+                app:layout_constraintTop_toBottomOf="@+id/forestGreenBeanieText" />
+
+            <Button
+                android:id="@+id/greyBeanieButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/greybeanie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/maroonBeanieButton"
+                app:layout_constraintEnd_toStartOf="@+id/greybeanieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/goldBeanieButton" />
+
+            <TextView
+                android:id="@+id/greybeanieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Grey Beanie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/maroonBeanieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/greyBeanieButton"
+                app:layout_constraintTop_toBottomOf="@+id/goldBeanieText" />
+
+            <Button
+                android:id="@+id/maroonBeanieButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/maroonbeanie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/orangeBeanieButton"
+                app:layout_constraintEnd_toStartOf="@+id/maroonBeanieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/greyBeanieButton" />
+
+            <TextView
+                android:id="@+id/maroonBeanieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Maroon Beanie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/orangeBeanieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/maroonBeanieButton"
+                app:layout_constraintTop_toBottomOf="@+id/greybeanieText" />
+
+            <Button
+                android:id="@+id/orangeBeanieButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/orangebeanie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/pinkBeanieButton"
+                app:layout_constraintEnd_toStartOf="@+id/orangeBeanieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/maroonBeanieButton" />
+
+            <TextView
+                android:id="@+id/orangeBeanieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Orange Beanie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/pinkBeanieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/orangeBeanieButton"
+                app:layout_constraintTop_toBottomOf="@+id/maroonBeanieText" />
+
+            <Button
+                android:id="@+id/pinkBeanieButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/pinkbeanie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/purpleBeanieButton"
+                app:layout_constraintEnd_toStartOf="@+id/pinkBeanieText"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/orangeBeanieButton" />
+
+            <TextView
+                android:id="@+id/pinkBeanieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Pink Beanie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/purpleBeanieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pinkBeanieButton"
+                app:layout_constraintTop_toBottomOf="@+id/orangeBeanieText" />
+
+            <Button
+                android:id="@+id/purpleBeanieButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/purplebeanie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/redBeanieButton"
+                app:layout_constraintEnd_toStartOf="@+id/purpleBeanieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pinkBeanieButton" />
+
+            <TextView
+                android:id="@+id/purpleBeanieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Purple Beanie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/redBeanieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/purpleBeanieButton"
+                app:layout_constraintTop_toBottomOf="@+id/pinkBeanieText" />
+
+            <Button
+                android:id="@+id/redBeanieButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/redbeanie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/royalBlueBeanieButton"
+                app:layout_constraintEnd_toStartOf="@+id/redBeanieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/purpleBeanieButton" />
+
+            <TextView
+                android:id="@+id/redBeanieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Red Beanie"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/royalBlueBeanieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/redBeanieButton"
+                app:layout_constraintTop_toBottomOf="@+id/purpleBeanieText" />
+
+            <Button
+                android:id="@+id/royalBlueBeanieButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/royalbluebeanie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/royalBlueBeanieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/redBeanieButton" />
+
+            <TextView
+                android:id="@+id/royalBlueBeanieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Royal Blue Beanie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/royalBlueBeanieButton"
+                app:layout_constraintTop_toBottomOf="@+id/redBeanieText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/shirtScroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBanner">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/blackShirtButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/blackshirt"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/blueShirtButton"
+                app:layout_constraintEnd_toStartOf="@+id/blackShortSleeveText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/blackShortSleeveText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Black Short-Sleeve"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/blueShirtText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/blackShirtButton"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/blueShirtButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/blueshirt"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/forestGreenShirtButton"
+                app:layout_constraintEnd_toStartOf="@+id/blueShirtText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blackShirtButton" />
+
+            <TextView
+                android:id="@+id/blueShirtText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Blue Short-Sleeve"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/forestGreenShortSleeve"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/blueShirtButton"
+                app:layout_constraintTop_toBottomOf="@+id/blackShortSleeveText" />
+
+            <Button
+                android:id="@+id/forestGreenShirtButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/forestgreenshirt"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/grayShirtButton"
+                app:layout_constraintEnd_toStartOf="@+id/forestGreenShortSleeve"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blueShirtButton" />
+
+            <TextView
+                android:id="@+id/forestGreenShortSleeve"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Forest Green Short-Sleeve"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/grayShirtText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/forestGreenShirtButton"
+                app:layout_constraintTop_toBottomOf="@+id/blueShirtText" />
+
+            <Button
+                android:id="@+id/grayShirtButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/grayshirt"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/greenShirtButton"
+                app:layout_constraintEnd_toStartOf="@+id/grayShirtText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/forestGreenShirtButton" />
+
+            <TextView
+                android:id="@+id/grayShirtText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Gray Short-Sleeve"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/greenShirtText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/grayShirtButton"
+                app:layout_constraintTop_toBottomOf="@+id/forestGreenShortSleeve" />
+
+            <Button
+                android:id="@+id/greenShirtButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/greenshirt"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/orangeShirtButton"
+                app:layout_constraintEnd_toStartOf="@+id/greenShirtText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/grayShirtButton" />
+
+            <TextView
+                android:id="@+id/greenShirtText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Green Short-Sleeve"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/orangeShirtText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/greenShirtButton"
+                app:layout_constraintTop_toBottomOf="@+id/grayShirtText" />
+
+            <Button
+                android:id="@+id/orangeShirtButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/orangeshirt"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/pinkShirtButton"
+                app:layout_constraintEnd_toStartOf="@+id/orangeShirtText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/greenShirtButton" />
+
+            <TextView
+                android:id="@+id/orangeShirtText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Orange Short-Sleeve"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/pinkShirtText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/orangeShirtButton"
+                app:layout_constraintTop_toBottomOf="@+id/greenShirtText" />
+
+            <Button
+                android:id="@+id/pinkShirtButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/pinkshirt"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/redShirtButton"
+                app:layout_constraintEnd_toStartOf="@+id/pinkShirtText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/orangeShirtButton" />
+
+            <TextView
+                android:id="@+id/pinkShirtText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Pink Short-Sleeve"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/redShirtText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pinkShirtButton"
+                app:layout_constraintTop_toBottomOf="@+id/orangeShirtText" />
+
+            <Button
+                android:id="@+id/redShirtButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/redshirt"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/redShirtText"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pinkShirtButton" />
+
+            <TextView
+                android:id="@+id/redShirtText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Red Short-Sleeve"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/redShirtButton"
+                app:layout_constraintTop_toBottomOf="@+id/pinkShirtText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/hoodieScroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBanner">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/athleticGrayHoodieButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/athleticgrayhoodie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/beigeHoodieButton"
+                app:layout_constraintEnd_toStartOf="@+id/athleticGrayHoodieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/athleticGrayHoodieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Athletic Gray Hoodie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/beigeHoodieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/athleticGrayHoodieButton"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/beigeHoodieButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/beigehoodie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/blueHoodieButton"
+                app:layout_constraintEnd_toStartOf="@+id/beigeHoodieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/athleticGrayHoodieButton" />
+
+            <TextView
+                android:id="@+id/beigeHoodieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Beige Hoodie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/blueHoodieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/beigeHoodieButton"
+                app:layout_constraintTop_toBottomOf="@+id/athleticGrayHoodieText" />
+
+            <Button
+                android:id="@+id/blueHoodieButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bluehoodie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/forestGreenHoodieButton"
+                app:layout_constraintEnd_toStartOf="@+id/blueHoodieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/beigeHoodieButton" />
+
+            <TextView
+                android:id="@+id/blueHoodieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Blue Hoodie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/forestGreenHoodieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/blueHoodieButton"
+                app:layout_constraintTop_toBottomOf="@+id/beigeHoodieText" />
+
+            <Button
+                android:id="@+id/forestGreenHoodieButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/forestgreenhoodie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/hunterGreenHoodieButton"
+                app:layout_constraintEnd_toStartOf="@+id/forestGreenHoodieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blueHoodieButton" />
+
+            <TextView
+                android:id="@+id/forestGreenHoodieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Forest Green Hoodie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/hunterGreenHoodieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/forestGreenHoodieButton"
+                app:layout_constraintTop_toBottomOf="@+id/blueHoodieText" />
+
+            <Button
+                android:id="@+id/hunterGreenHoodieButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/huntergreenhoodie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/lightHoodieButton"
+                app:layout_constraintEnd_toStartOf="@+id/hunterGreenHoodieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/forestGreenHoodieButton" />
+
+            <TextView
+                android:id="@+id/hunterGreenHoodieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Hunter Green Hoodie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/lightHoodieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/hunterGreenHoodieButton"
+                app:layout_constraintTop_toBottomOf="@+id/forestGreenHoodieText" />
+
+            <Button
+                android:id="@+id/lightHoodieButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/lighthoodie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/pinkHoodieButton"
+                app:layout_constraintEnd_toStartOf="@+id/lightHoodieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hunterGreenHoodieButton" />
+
+            <TextView
+                android:id="@+id/lightHoodieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Light Hoodie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/pinkHoodieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/lightHoodieButton"
+                app:layout_constraintTop_toBottomOf="@+id/hunterGreenHoodieText" />
+
+            <Button
+                android:id="@+id/pinkHoodieButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/pinkhoodie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/roseHoodieButton"
+                app:layout_constraintEnd_toStartOf="@+id/pinkHoodieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lightHoodieButton" />
+
+            <TextView
+                android:id="@+id/pinkHoodieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Candy Pink Hoodie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/roseHoodieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pinkHoodieButton"
+                app:layout_constraintTop_toBottomOf="@+id/lightHoodieText" />
+
+            <Button
+                android:id="@+id/roseHoodieButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rosehoodie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/spiderHoodButton"
+                app:layout_constraintEnd_toStartOf="@+id/roseHoodieText"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pinkHoodieButton" />
+
+            <TextView
+                android:id="@+id/roseHoodieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Dusty Rose Hoodie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/spdierHoodieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/roseHoodieButton"
+                app:layout_constraintTop_toBottomOf="@+id/pinkHoodieText" />
+
+            <Button
+                android:id="@+id/spiderHoodButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/spiderhoodie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/whiteHoodieButton"
+                app:layout_constraintEnd_toStartOf="@+id/spdierHoodieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/roseHoodieButton" />
+
+            <TextView
+                android:id="@+id/spdierHoodieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Spider Tie Die Hoodie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/whiteHoodieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/spiderHoodButton"
+                app:layout_constraintTop_toBottomOf="@+id/roseHoodieText" />
+
+            <Button
+                android:id="@+id/whiteHoodieButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/whitehoodie"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/whiteHoodieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spiderHoodButton" />
+
+            <TextView
+                android:id="@+id/whiteHoodieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="White Hoodie"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/whiteHoodieButton"
+                app:layout_constraintTop_toBottomOf="@+id/spdierHoodieText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/DropdownList"
+            android:layout_width="129dp"
+            android:layout_height="242dp"
+            android:background="#000000"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TopBanner">
+
+            <Button
+                android:id="@+id/HomeButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:text="Home"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/CalendarButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:text="Calendar"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/FoodButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:text="Food Trucks"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/ContactButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:text="Contact Us"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/PicturesButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:text="Pictures"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/MenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:text="Drink Menu"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

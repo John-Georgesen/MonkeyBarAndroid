@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#471010"
+    android:screenOrientation="portrait"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/TopBanner"
+        android:layout_width="0dp"
+        android:layout_height="87dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/black" />
+
+    <TextView
+        android:id="@+id/HeaderTitle"
+        android:layout_width="287dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/algerian"
+        android:gravity="center"
+        android:text="@string/barName"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TopBanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TopBanner"
+        app:layout_constraintStart_toEndOf="@+id/DDDropdown"/>
+
+    <ImageView
+        android:id="@+id/bottomBanner"
+        android:layout_width="0dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:color/black" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="223dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="right"
+        android:text="7837 OLD 3C HIGHWAY, MAINEVILLE, OH, 45039"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomBanner" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="223dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:text="+1 (513) 781-4246"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomBanner" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="222dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:text="themonkeybarandgrille@gmail.com"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomBanner"
+        app:layout_constraintVertical_bias="0.843" />
+
+
+    <!-- Slideshow and background -->
+    <ImageView
+        android:id="@+id/bottomBannerLogo"
+        android:layout_width="85dp"
+        android:layout_height="66dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBanner"
+        app:layout_constraintEnd_toStartOf="@+id/address"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomBanner"
+        app:layout_constraintVertical_bias="0.909"
+        app:srcCompat="@drawable/mbg4" />
+
+    <!--Hours Labels -->
+
+    <!-- Social Media Labels and buttons -->
+
+
+    <TextView
+        android:id="@+id/hoursText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="MON-THURS: 12pm-11pm "
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/hoursText1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hoursText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="SUN: 11am-11pm"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBanner"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hoursText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="FRI-SAT: 11am-12am"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/hoursText2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--navigation buttons-->
+
+    <Button
+        android:id="@+id/CalendarNavButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/calendariconwhite"
+        app:layout_constraintBottom_toTopOf="@+id/CalendarLabel"
+        app:layout_constraintEnd_toStartOf="@+id/foodTruckButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBanner"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/foodTruckButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/foodtruckiconwhite"
+        app:layout_constraintBottom_toTopOf="@+id/FoodButtonLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CalendarNavButton"
+        app:layout_constraintTop_toBottomOf="@+id/TopBanner" />
+
+    <!--Nav Button Labels-->
+
+    <Button
+        android:id="@+id/drinkMenuButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/drinkiconwhite"
+        app:layout_constraintBottom_toTopOf="@+id/DrinkMenuLabel"
+        app:layout_constraintEnd_toStartOf="@+id/MerchButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CalendarLabel" />
+
+    <TextView
+        android:id="@+id/DrinkMenuLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginBottom="10dp"
+        android:text="Drink Menu"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/contactButton"
+        app:layout_constraintEnd_toStartOf="@+id/merchText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drinkMenuButton" />
+
+    <Button
+        android:id="@+id/picturesButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/picturesiconwhite"
+        app:layout_constraintBottom_toTopOf="@+id/picturesLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/contactButton"
+        app:layout_constraintTop_toBottomOf="@+id/merchText" />
+
+    <Button
+        android:id="@+id/contactButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/contactusiconwhite"
+        app:layout_constraintBottom_toTopOf="@+id/contactUsLabel"
+        app:layout_constraintEnd_toStartOf="@+id/picturesButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DrinkMenuLabel" />
+
+    <Button
+        android:id="@+id/MerchButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/clothesiconwhite"
+        app:layout_constraintBottom_toTopOf="@+id/merchText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/drinkMenuButton"
+        app:layout_constraintTop_toBottomOf="@+id/FoodButtonLabel" />
+
+    <TextView
+        android:id="@+id/merchText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="10dp"
+        android:text="Monkey Merch"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/picturesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DrinkMenuLabel"
+        app:layout_constraintTop_toBottomOf="@+id/MerchButton" />
+
+    <TextView
+        android:id="@+id/CalendarLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="10dp"
+        android:text="Calendar"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/drinkMenuButton"
+        app:layout_constraintEnd_toStartOf="@+id/FoodButtonLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CalendarNavButton" />
+
+    <TextView
+        android:id="@+id/FoodButtonLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="Food Trucks"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/MerchButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CalendarLabel"
+        app:layout_constraintTop_toBottomOf="@+id/foodTruckButton" />
+
+    <TextView
+        android:id="@+id/contactUsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="20dp"
+        android:text="Contact Us"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/hoursText"
+        app:layout_constraintEnd_toStartOf="@+id/picturesLabel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactButton" />
+
+    <TextView
+        android:id="@+id/picturesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginBottom="80dp"
+        android:text="Pictures"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/contactUsLabel"
+        app:layout_constraintTop_toBottomOf="@+id/picturesButton" />
+
+    <Button
+        android:id="@+id/DDDropdown"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/TopBanner"
+        app:layout_constraintEnd_toStartOf="@+id/HeaderTitle"
+        app:layout_constraintStart_toStartOf="@+id/TopBanner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486" />
+
+    <LinearLayout
+        android:id="@+id/DropdownList"
+        android:layout_width="129dp"
+        android:layout_height="242dp"
+        android:background="#000000"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBanner">
+
+        <Button
+            android:id="@+id/FoodTrucksButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:text="Food Trucks"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/CalendarButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:text="Calendar"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/ContactButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:text="Contact Us"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/merchButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:text="Monkey Merch"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/PicturesButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:text="Pictures"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/MenuButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:text="Drink Menu"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

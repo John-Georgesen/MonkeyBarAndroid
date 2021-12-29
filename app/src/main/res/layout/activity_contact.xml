@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#471010"
+    android:screenOrientation="portrait"
+    tools:context=".ContactActivity">
+
+    <!--Banners-->
+    <ImageView
+        android:id="@+id/TopBanner"
+        android:layout_width="0dp"
+        android:layout_height="87dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/black" />
+
+    <TextView
+        android:id="@+id/HeaderTitle"
+        android:layout_width="287dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/algerian"
+        android:gravity="center"
+        android:text="@string/barName"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TopBanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DDDropdown"
+        app:layout_constraintTop_toTopOf="@+id/TopBanner" />
+
+    <ImageView
+        android:id="@+id/bottomBanner"
+        android:layout_width="0dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:color/black" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="223dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="right"
+        android:text="7837 OLD 3C HIGHWAY, MAINEVILLE, OH, 45039"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomBanner" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="223dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:text="+1 (513) 781-4246"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomBanner" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="222dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:text="themonkeybarandgrille@gmail.com"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomBanner"
+        app:layout_constraintVertical_bias="0.843" />
+
+
+    <!-- Slideshow and background -->
+    <ImageView
+        android:id="@+id/bottomBannerLogo"
+        android:layout_width="85dp"
+        android:layout_height="66dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBanner"
+        app:layout_constraintEnd_toStartOf="@+id/address"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomBanner"
+        app:layout_constraintVertical_bias="0.909"
+        app:srcCompat="@drawable/mbg4" />
+
+    <!--Nav Dropdown-->
+
+    <!--Phone-->
+
+    <!--Address-->
+
+    <!--email-->
+
+    <ImageView
+        android:id="@+id/middleBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBanner"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@android:color/black" />
+
+    <Button
+        android:id="@+id/DDDropdown"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/TopBanner"
+        app:layout_constraintEnd_toStartOf="@+id/HeaderTitle"
+        app:layout_constraintStart_toStartOf="@+id/TopBanner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/middleBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/middleBackground"
+        app:layout_constraintTop_toTopOf="@+id/middleBackground"
+        app:srcCompat="@android:color/background_light" />
+
+    <LinearLayout
+        android:id="@+id/LabelStackView"
+        android:layout_width="74dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/ContactTitle">
+
+        <TextView
+            android:id="@+id/addressLabel"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="right"
+            android:text="Address:"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:autoSizeMinTextSize="5sp" />
+
+        <TextView
+            android:id="@+id/instagramLabel"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="right"
+            android:text="Instagram:"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:autoSizeMinTextSize="5sp" />
+
+        <TextView
+            android:id="@+id/facebookLabel"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="right"
+            android:text="Facebook:"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:autoSizeMinTextSize="5sp" />
+
+        <TextView
+            android:id="@+id/phoneLabel"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="right"
+            android:text="Phone:"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:autoSizeMinTextSize="5sp" />
+
+        <TextView
+            android:id="@+id/websiteLabel"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="right"
+            android:text="Website:"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:autoSizeMinTextSize="5sp" />
+
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="right"
+            android:text="Email:"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:autoSizeMinTextSize="5sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ClickableStackView"
+        android:layout_width="206dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/LabelStackView"
+        app:layout_constraintTop_toBottomOf="@+id/ContactTitle">
+
+        <TextView
+            android:id="@+id/websiteLabelClickable"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/websiteContactString"
+            android:textColor="#0A2194"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:autoSizeMinTextSize="5sp" />
+
+        <TextView
+            android:id="@+id/addressLabelClickable"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/addressContactString"
+            android:textColor="#0A2194"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:autoSizeMinTextSize="5sp" />
+
+        <TextView
+            android:id="@+id/instagramLabelClickable"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/instagramContactString"
+            android:textColor="#0A2194"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:autoSizeMinTextSize="5sp" />
+
+        <TextView
+            android:id="@+id/phoneLabelClickable"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/phoneContactString"
+            android:textColor="#0A2194"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:autoSizeMinTextSize="5sp" />
+
+        <TextView
+            android:id="@+id/facebookLabelClickable"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/facebookContactString"
+            android:textColor="#0A2194"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:autoSizeMinTextSize="5sp" />
+
+        <TextView
+            android:id="@+id/emailLabelClickable"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/emailContactString"
+            android:textColor="#0A2194"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:autoSizeMinTextSize="5sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ReservationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:text="RESERVATIONS"
+        android:textColor="#090909"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:autoSizeMinTextSize="5sp"
+        app:layout_constraintStart_toStartOf="@+id/LabelStackView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/ContactTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Contact Us"
+        android:textColor="#090909"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:autoSizeMinTextSize="5sp"
+        app:layout_constraintStart_toStartOf="@+id/LabelStackView"
+        app:layout_constraintTop_toBottomOf="@+id/reservationInfo1" />
+
+    <TextView
+        android:id="@+id/Employement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Employment"
+        android:textColor="#090909"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:autoSizeMinTextSize="5sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/LabelStackView" />
+
+    <TextView
+        android:id="@+id/reservationInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:text="We accept reservations for parties. Click "
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:autoSizeMinTextSize="5sp"
+        app:layout_constraintEnd_toStartOf="@+id/clickHereReserve"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/ReservationTitle" />
+
+    <TextView
+        android:id="@+id/employmentInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:text="We are always looking to add to our staff. Click"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:autoSizeMinTextSize="5sp"
+        app:layout_constraintBottom_toTopOf="@+id/employmentInfo2"
+        app:layout_constraintStart_toStartOf="@+id/LabelStackView"
+        app:layout_constraintTop_toBottomOf="@+id/Employement" />
+
+    <TextView
+        android:id="@+id/employmentInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" to join the Monkey Bar team!"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:autoSizeMinTextSize="5sp"
+        app:layout_constraintStart_toEndOf="@+id/clickHereEmploy"
+        app:layout_constraintTop_toBottomOf="@+id/employmentInfo" />
+
+    <TextView
+        android:id="@+id/reservationInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="to grab your seats!"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:autoSizeMinTextSize="5sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/reservationInfo" />
+
+    <TextView
+        android:id="@+id/clickHereReserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/hereLabel"
+        android:textColor="#0A2194"
+        android:textSize="12sp"
+        app:autoSizeMinTextSize="5sp"
+        app:layout_constraintStart_toEndOf="@+id/reservationInfo"
+        app:layout_constraintTop_toBottomOf="@+id/ReservationTitle" />
+
+    <TextView
+        android:id="@+id/clickHereEmploy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/hereLabel"
+        android:textColor="#0A2194"
+        android:textSize="12sp"
+        app:autoSizeMinTextSize="5sp"
+        app:layout_constraintEnd_toStartOf="@+id/employmentInfo2"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/employmentInfo" />
+
+        <LinearLayout
+            android:id="@+id/DropdownList"
+            android:layout_width="129dp"
+            android:layout_height="242dp"
+            android:background="#000000"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TopBanner">
+
+            <Button
+                android:id="@+id/HomeButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:text="Home"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/CalendarButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:text="Calendar"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/FoodButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:text="Food Trucks"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/MerchButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:text="Monkey Merch"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/PicturesButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:text="Pictures"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/MenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:text="Drink Menu"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

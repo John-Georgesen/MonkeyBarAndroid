@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    android:background="#471010"
+    tools:context=".FoodActivity">
+
+    <ImageView
+        android:id="@+id/TopBanner"
+        android:layout_width="0dp"
+        android:layout_height="87dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/black" />
+
+    <TextView
+        android:id="@+id/HeaderTitle"
+        android:layout_width="287dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/algerian"
+        android:gravity="center"
+        android:text="@string/barName"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TopBanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TopBanner"
+        app:layout_constraintStart_toEndOf="@+id/DDDropdown"/>
+    <ImageView
+        android:id="@+id/bottomBanner"
+        android:layout_width="0dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:color/black" />
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="223dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="right"
+        android:text="7837 OLD 3C HIGHWAY, MAINEVILLE, OH, 45039"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomBanner" />
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="223dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:text="+1 (513) 781-4246"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomBanner" />
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="222dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:text="themonkeybarandgrille@gmail.com"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomBanner"
+        app:layout_constraintVertical_bias="0.843" />
+
+    <!-- Slideshow and background -->
+    <ImageView
+        android:id="@+id/bottomBannerLogo"
+        android:layout_width="85dp"
+        android:layout_height="66dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBanner"
+        app:layout_constraintEnd_toStartOf="@+id/address"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomBanner"
+        app:layout_constraintVertical_bias="0.909"
+        app:srcCompat="@drawable/mbg4" />
+
+    <!--Hours Labels -->
+    <!-- Social Media Labels and buttons -->
+
+    <ScrollView
+        android:id="@+id/foodTruckScroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/streetButton">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/blackShirtButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/blueShirtButton"
+                app:layout_constraintEnd_toStartOf="@+id/blackShortSleeveText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/blackShortSleeveText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="BG's Grill"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/blueShirtText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/blackShirtButton"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/blueShirtButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/biteme"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/forestGreenShirtButton"
+                app:layout_constraintEnd_toStartOf="@+id/blueShirtText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blackShirtButton" />
+
+            <TextView
+                android:id="@+id/blueShirtText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Bite Me Corndog"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/forestGreenShortSleeve"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/blueShirtButton"
+                app:layout_constraintTop_toBottomOf="@+id/blackShortSleeveText" />
+
+            <Button
+                android:id="@+id/forestGreenShirtButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/carbonaras"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/grayShirtButton"
+                app:layout_constraintEnd_toStartOf="@+id/forestGreenShortSleeve"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blueShirtButton" />
+
+            <TextView
+                android:id="@+id/forestGreenShortSleeve"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Carbonara's"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/grayShirtText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/forestGreenShirtButton"
+                app:layout_constraintTop_toBottomOf="@+id/blueShirtText" />
+
+            <Button
+                android:id="@+id/grayShirtButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/cheesenchong"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/greenShirtButton"
+                app:layout_constraintEnd_toStartOf="@+id/grayShirtText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/forestGreenShirtButton" />
+
+            <TextView
+                android:id="@+id/grayShirtText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Cheese n' Chong"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/greenShirtText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/grayShirtButton"
+                app:layout_constraintTop_toBottomOf="@+id/forestGreenShortSleeve" />
+
+            <Button
+                android:id="@+id/greenShirtButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/jfishtacos"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/orangeShirtButton"
+                app:layout_constraintEnd_toStartOf="@+id/greenShirtText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/grayShirtButton" />
+
+            <TextView
+                android:id="@+id/greenShirtText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="J's Fish Taco"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/orangeShirtText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/greenShirtButton"
+                app:layout_constraintTop_toBottomOf="@+id/grayShirtText" />
+
+            <Button
+                android:id="@+id/orangeShirtButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/martys"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/pinkShirtButton"
+                app:layout_constraintEnd_toStartOf="@+id/orangeShirtText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/greenShirtButton" />
+
+            <TextView
+                android:id="@+id/orangeShirtText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Marty's Waffles"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/pinkShirtText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/orangeShirtButton"
+                app:layout_constraintTop_toBottomOf="@+id/greenShirtText" />
+
+            <Button
+                android:id="@+id/pinkShirtButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/stelllar"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/redShirtButton"
+                app:layout_constraintEnd_toStartOf="@+id/pinkShirtText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/orangeShirtButton" />
+
+            <TextView
+                android:id="@+id/pinkShirtText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Stellar Street Eats"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/redShirtText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pinkShirtButton"
+                app:layout_constraintTop_toBottomOf="@+id/orangeShirtText" />
+
+            <Button
+                android:id="@+id/redShirtButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/sea"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/spiderHoodButton"
+                app:layout_constraintEnd_toStartOf="@+id/redShirtText"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pinkShirtButton" />
+
+            <TextView
+                android:id="@+id/redShirtText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Sea Cuisine"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/spdierHoodieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/redShirtButton"
+                app:layout_constraintTop_toBottomOf="@+id/pinkShirtText" />
+
+            <Button
+                android:id="@+id/spiderHoodButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/mexico"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/whiteHoodieButton"
+                app:layout_constraintEnd_toStartOf="@+id/spdierHoodieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/redShirtButton" />
+
+            <TextView
+                android:id="@+id/spdierHoodieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Taste of Mexico"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/whiteHoodieText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/spiderHoodButton"
+                app:layout_constraintTop_toBottomOf="@+id/redShirtText" />
+
+            <Button
+                android:id="@+id/whiteHoodieButton"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/wickedlobstah"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/whiteHoodieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spiderHoodButton" />
+
+            <TextView
+                android:id="@+id/whiteHoodieText"
+                android:layout_width="127dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Wicked Lobstah"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/whiteHoodieButton"
+                app:layout_constraintTop_toBottomOf="@+id/spdierHoodieText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/DDDropdown"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/TopBanner"
+        app:layout_constraintEnd_toStartOf="@+id/HeaderTitle"
+        app:layout_constraintStart_toStartOf="@+id/TopBanner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486" />
+
+    <LinearLayout
+        android:id="@+id/DropdownList"
+        android:layout_width="129dp"
+        android:layout_height="242dp"
+        android:background="#000000"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBanner">
+
+        <Button
+            android:id="@+id/HomeButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:text="Home"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/CalendarButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:text="Calendar"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/ContactButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:text="Contact Us"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/MerchButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:text="Monkey Merch"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/PicturesButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:text="Pictures"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/MenuButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:text="Drink Menu"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/streetButton"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginRight="125dp"
+        android:background="#FFFFFF"
+        android:text="Street Food Finder"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/foodTruckScroll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBanner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
